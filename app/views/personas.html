@@ -1,0 +1,47 @@
+
+
+          
+      <div class="navbar navbar-inverse navbar-fixed-top search" role="navigation">
+		<div class="col-xs-3">
+			Personal
+      	</div>
+
+		<div class="col-xs-9">
+          <input type="text" class="form-control" placeholder="Buscar" ng-model="search">
+      	</div>
+      </div>
+
+<div class="row">
+
+	<!--div class="col-xs-12 filters">
+		<div class="btn-toolbar" role="toolbar">
+			<div class="btn-group">
+		        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-sort-by-attributes" ng-click="reverse=false"></span></button>
+		        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-sort-by-attributes-alt" ng-click="reverse=true"></span></button>
+  			</div>
+	      <div class="btn-group">
+	        <button type="button" class="btn btn-default">5</button>
+	        <button type="button" class="btn btn-default">6</button>
+	        <button type="button" class="btn btn-default">7</button>
+	      </div>
+	      <div class="btn-group">
+	        <button type="button" class="btn btn-default">8</button>
+	      </div>
+	    </div>
+	</div-->
+	
+
+	<div ng-init="reverse=false" ng-repeat="p in personas | orderBy:'name':reverse | filter:search " class="col-xs-12 detail">
+		<div class="col-xs-7">{{p.name}} - {{p.dni}}</div>
+		<div class="col-xs-5">
+			<div class="btn-group btn-group-sm">
+				<button ng-repeat="s in states" type="button" class="btn btn-default {{getCssClass(p, s)}}" ng-click="setState(p, s)">
+		        	<span class="glyphicon {{s.icon}}"></span>
+		        </button>
+	    	</div>
+  		</div>
+
+	</div>
+	
+
+</div>

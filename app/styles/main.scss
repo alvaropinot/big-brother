@@ -1,0 +1,121 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+html,body{
+    //height: 100%;
+}
+/* Space out content a bit */
+body {
+    /*padding-top: 60px;
+    padding-bottom: 60px;*/
+}
+
+#view{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    //border: 1px solid;
+    //box-shadow: 0px -4px 5px 0px #111;
+    box-shadow: 0px -13px 11px -14px #111;
+    padding-top: 10px;
+    //height: 100%;
+}
+/*
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+}*/
+
+.ng-enter{
+    animation: fadeIn 1s ease;
+}
+.ng-enter .row{
+    /*animation:slideInRight;*/
+    //color:red;
+    //transition:all 2s ease;
+    //border-top:1px solid #111;
+    animation: bounceInUp 1s ease;
+    //animation-delay: 1s;
+}
+
+.ng-enter.detail{
+    animation: slideInLeft 1s ease;
+}
+.ng-leave.detail{
+    animation: slideOutLeft 1s ease;
+    /*height: 0;
+    transition: all 1s ease;*/
+
+}
+
+/*.ng-leave-active,.ng-enter-active {
+    height: 0;
+    transition: all 1s ease;
+}*/
+
+/*.ng-leave{
+    animation: bounceOutUp 1s ease;
+    animation-delay: 1s;
+}*/
+
+
+.buttons{
+    height: 50px;
+    font-size: 1em;
+    text-align:center;
+}
+
+.buttons .glyphicon {
+    font-size: 2em;
+    margin-top:.3em;
+}
+
+.buttons p{
+    font-size:.8em;
+}
+
+
+.list-group{
+    margin-left:-15px;
+    margin-right:-15px;
+}
+
+.detail{
+    border-bottom:1px solid #bbb;
+    padding: 1em 0;
+}
+
+
+.filters{
+    position: fixed;
+    background: white;
+    z-index:1;
+    border-bottom:1px solid #333;
+    top:50px;
+    padding: 5px 15px;
+}
+
+.top{
+    position: fixed;
+    top:0;
+}
+
+.navbar.search{
+    //padding:8px 15px;
+    padding:8px 0px;
+}
