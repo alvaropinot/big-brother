@@ -13,4 +13,4 @@
 	        <button type="button" class="btn btn-default">8</button>
 	      </div>
 	    </div>
-	</div--><div ng-init="reverse=false" ng-repeat="p in personas | orderBy:'name':reverse | filter:search " class="col-xs-12 detail"><div class="col-xs-6">{{p.name}} - {{p.dni}}</div><div class="col-xs-6"><div class="btn-group btn-group-sm"><button ng-repeat="s in states" type="button" class="btn btn-default {{getCssClass(p, s)}}" ng-click="setState(p, s)"><span class="glyphicon {{s.icon}}"></span></button></div></div></div></div>
+	</div--><div ng-init="reverse=false" ng-repeat="p in personas | orderBy:'name':reverse | filter:search " class="col-xs-12 detail"><div class="col-xs-7">{{p.name}} - {{p.dni}}</div><div class="col-xs-5"><div class="btn-group btn-group-sm"><button ng-repeat="s in states" type="button" class="btn btn-default {{getCssClass(p, s)}}" ng-click="setState(p, s)"><span class="glyphicon {{s.icon}}"></span></button></div></div></div></div>
